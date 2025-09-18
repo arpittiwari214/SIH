@@ -1,0 +1,11 @@
+we want to build a software like this as we have provided the above information :
+where firstly we will register our user and store its data which the user will provide the asked data to us.
+sometimes our software may lack the data because sometimes user may not want to share the personal information, so on the basis of the information given by user, the much he/she want to give,
+then on the basis of that we will ask some sort of quiz , where the first quiz will be generated on the basis of the data given by the user to us on the time of registration. also the next question should be generated on the basis of previous answers and the data of the user. also some times user may not want to register or sign up so we will not have their data then our quiz will only be the way so we can just ask quiz and on the basis of previous answers software should ask the next question. not registered user after completing the quiz we ask for to register to continue further.
+after all this profiling of the user which includes quiz basic information it should be saved and analyzed.
+all the things should be ai driven quiz basic profiling analyzing.
+after the analyzing all the data on the profile a tree type carrier roadmap should be designed origination from the users current stage for example if he/she is in 10th class then there should be five child branches originating from 10th class suggesting possible future carrier options then on the further 5 branches there should be other 5 - 5 branches showing future option after taking that option and so on. at every option we can click there and take a look into detail on it showing the necessary details on it.
+here on graduation steps there must be some possible government colleges and their details 
+also it should include more and more government institution.
+some pathways or roadmap should bring towards government jobs and some must bring towards corporate sector and some may suggest own business or some other roles.
+after that user must
