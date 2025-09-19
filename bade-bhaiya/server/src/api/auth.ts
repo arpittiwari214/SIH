@@ -39,7 +39,7 @@ router.post('/register', async (req, res) => {
     res.status(201).json({ message: 'User created successfully', userId: user.id });
   } catch (error) {
     if (error instanceof z.ZodError) {
-      return res.status(400).json({ message: error.errors });
+      return res.status(400).json({ message: error.issues });
     }
     res.status(500).json({ message: 'Internal server error' });
   }
@@ -64,7 +64,7 @@ router.post('/login', async (req, res) => {
     res.json({ token });
   } catch (error) {
     if (error instanceof z.ZodError) {
-      return res.status(400).json({ message: error.errors });
+      return res.status(400).json({ message: error.issues });
     }
     res.status(500).json({ message: 'Internal server error' });
   }

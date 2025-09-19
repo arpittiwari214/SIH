@@ -15,7 +15,7 @@ router.post('/apply', async (req, res) => {
     const { scholarshipId, userId } = applySchema.parse(req.body);
 
     // Check if the user has already applied for this scholarship
-    const existingApplication = await prisma.application.findFirst({
+    const existingApplication = await prisma.scholarshipApplication.findFirst({
       where: {
         scholarshipId,
         userId,
@@ -26,7 +26,7 @@ router.post('/apply', async (req, res) => {
       return res.status(400).json({ message: 'You have already applied for this scholarship' });
     }
 
-    const application = await prisma.application.create({
+    const application = await prisma.scholarshipApplication.create({
       data: {
         scholarshipId,
         userId,
@@ -37,7 +37,7 @@ router.post('/apply', async (req, res) => {
     res.status(201).json({ message: 'Application submitted successfully', application });
   } catch (error) {
     if (error instanceof z.ZodError) {
-      return res.status(400).json({ message: error.errors });
+      return res.status(400).json({ message: error.issues });
     }
     res.status(500).json({ message: 'Internal server error' });
   }
